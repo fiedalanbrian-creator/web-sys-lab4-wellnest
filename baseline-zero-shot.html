@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wellnest is your friendly local guide to everyday health, movement, and community care."
+    />
+    <meta name="theme-color" content="#f7f8f2" />
+    <title>Wellnest — Feel good, together</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Wellnest home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M20 33s-13-8.2-13-17.1C7 9.7 15.4 7.1 20 14c4.6-6.9 13-4.3 13 1.9C33 24.8 20 33 20 33Z" />
+            <path d="M13 21h5l2.2-4.5L23 25l2-4h3" />
+          </svg>
+        </span>
+        <span>wellnest<span class="brand-period">.</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#today">Today</a>
+        <a href="#wellness">Wellness</a>
+        <a href="#community">Community</a>
+      </nav>
+      <a class="header-link" href="#resources">
+        Find local support
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-5-5 5 5-5 5" /></svg>
+      </a>
+    </header>
+
+    <main id="home">
+      <section class="hero page-wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEIGHBORHOOD WELLNESS GUIDE</p>
+          <h1 id="hero-title">A little better,<br /> <span>every day.</span></h1>
+          <p class="hero-description">
+            Small, feel-good ways to care for yourself—and the people around you.
+            Welcome to a healthier kind of neighborhood.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#today">
+              See today’s tip
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-5-5 5 5-5 5" /></svg>
+            </a>
+            <a class="text-link" href="#wellness">Explore the guide <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="neighbor-note">
+            <span class="neighbor-avatars" aria-hidden="true">
+              <span>J</span><span>M</span><span>A</span>
+            </span>
+            <p><strong>Good health grows together.</strong><br />Made for our community, with care.</p>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a sunny garden and wellness">
+          <div class="sun"></div>
+          <div class="art-label"><span class="label-sparkle">✳</span> room to breathe</div>
+          <div class="hill hill-back"></div>
+          <div class="hill hill-front"></div>
+          <div class="plant plant-one"><i></i><i></i><i></i><i></i><b></b></div>
+          <div class="plant plant-two"><i></i><i></i><i></i><b></b></div>
+          <div class="flower flower-one"><i></i><i></i><i></i><i></i><i></i><b></b></div>
+          <div class="flower flower-two"><i></i><i></i><i></i><i></i><i></i><b></b></div>
+          <div class="flower flower-three"><i></i><i></i><i></i><i></i><i></i><b></b></div>
+          <div class="art-caption"><span class="caption-icon">♥</span> Take what you need. Share what you can.</div>
+        </div>
+      </section>
+
+      <section class="today-section" id="today" aria-labelledby="today-title">
+        <div class="page-wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">A FRESH START, EVERY MORNING</p>
+              <h2 id="today-title">Your daily dose of good</h2>
+            </div>
+            <p class="section-note"><span class="calendar-icon" aria-hidden="true">▦</span> A simple idea for a healthier you</p>
+          </div>
+          <article class="tip-card">
+            <div class="tip-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none">
+                <path d="M25 8h14M28 8v15l-13 22a7 7 0 0 0 6 11h22a7 7 0 0 0 6-11L36 23V8" />
+                <path d="M20 42h24M25 34c5 3 9-3 14 0" />
+                <circle cx="27" cy="46" r="1.5" /><circle cx="37" cy="39" r="1.5" />
+              </svg>
+            </div>
+            <div class="tip-content">
+              <span class="tip-kicker"><span></span> TODAY’S HEALTH TIP</span>
+              <h3 id="daily-tip-title">Make hydration a little more joyful</h3>
+              <p id="daily-tip-description">
+                Keep a glass of water where you can see it. Add a slice of citrus or
+                cucumber for a refreshing reminder to sip throughout the day.
+              </p>
+              <span class="tip-date" id="tip-date">A small step is still a step.</span>
+            </div>
+            <div class="tip-side">
+              <span class="tip-sparkle" aria-hidden="true">✳</span>
+              <p>Small habits<br />add up.</p>
+            </div>
+          </article>
+          <div class="tip-footer">
+            <span class="tip-source"><span class="source-check">✓</span> Gentle reminders, not medical advice.</span>
+            <button class="refresh-tip" id="refresh-tip" type="button">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 8a6 6 0 0 0-10.8-2L4 8m0-4v4h4m-4 4a6 6 0 0 0 10.8 2L16 12m0 4v-4h-4" /></svg>
+              Another little nudge
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="wellness-section page-wrap" id="wellness" aria-labelledby="wellness-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A FEW WAYS TO FEEL MORE YOU</p>
+            <h2 id="wellness-title">Wellness, your way</h2>
+          </div>
+          <a class="section-link" href="#resources">Browse all resources <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="wellness-grid">
+          <article class="wellness-card card-move">
+            <div class="wellness-illustration move-illustration" aria-hidden="true">
+              <span class="move-sun"></span><span class="move-figure"><i></i><b></b></span>
+              <span class="move-ground"></span>
+            </div>
+            <div class="card-copy">
+              <span class="card-category">MOVE A LITTLE</span>
+              <h3>Find your kind of movement</h3>
+              <p>A short stretch, a walk around the block, a dance in the kitchen—it all counts.</p>
+              <a href="#community" aria-label="Explore ways to move with your community">Explore movement <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="wellness-card card-rest">
+            <div class="wellness-illustration rest-illustration" aria-hidden="true">
+              <span class="rest-moon"></span><span class="rest-star star-a">✦</span>
+              <span class="rest-star star-b">✦</span><span class="rest-cloud"></span>
+            </div>
+            <div class="card-copy">
+              <span class="card-category">MAKE SPACE TO REST</span>
+              <h3>Give yourself a pause</h3>
+              <p>Try one slow breath in, and an even slower breath out. You deserve a moment.</p>
+              <a href="#resources" aria-label="Explore tips for rest and wellbeing">Find your calm <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="wellness-card card-connect">
+            <div class="wellness-illustration connect-illustration" aria-hidden="true">
+              <span class="connect-circle circle-one"></span><span class="connect-circle circle-two"></span>
+              <span class="connect-circle circle-three"></span><span class="connect-flower">✿</span>
+            </div>
+            <div class="card-copy">
+              <span class="card-category">STAY CONNECTED</span>
+              <h3>Wellbeing is a team sport</h3>
+              <p>Check in with a neighbor or join something local. A little connection goes a long way.</p>
+              <a href="#community" aria-label="See community wellness ideas">Meet your community <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="community-section" id="community">
+        <div class="community-inner page-wrap">
+          <div class="community-icon" aria-hidden="true">✿</div>
+          <div class="community-copy">
+            <p class="eyebrow">BETTER, SIDE BY SIDE</p>
+            <h2>There’s good happening<br />right around the corner.</h2>
+            <p>Wellness isn’t one-size-fits-all. It starts with small moments and a community that cares.</p>
+          </div>
+          <a class="button button-light" href="#resources">Explore local resources <span aria-hidden="true">↗</span></a>
+          <div class="community-decoration" aria-hidden="true">✳</div>
+        </div>
+      </section>
+
+      <section class="resources-section page-wrap" id="resources">
+        <div class="resources-intro">
+          <p class="eyebrow">HERE WHEN YOU NEED US</p>
+          <h2>Care is close by.</h2>
+          <p>Start with these simple ways to find support in your neighborhood.</p>
+        </div>
+        <div class="resource-list">
+          <a class="resource-item" href="https://findahealthcenter.hrsa.gov/" target="_blank" rel="noreferrer">
+            <span class="resource-number">01</span>
+            <span><strong>Find a health center</strong><small>Search for nearby community health care</small></span>
+            <span class="resource-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="resource-item" href="https://www.211.org/" target="_blank" rel="noreferrer">
+            <span class="resource-number">02</span>
+            <span><strong>Connect to local help</strong><small>Find community services and support through 211</small></span>
+            <span class="resource-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="resource-item" href="https://988lifeline.org/" target="_blank" rel="noreferrer">
+            <span class="resource-number">03</span>
+            <span><strong>Get mental health support</strong><small>Call or text 988 in the U.S. for 24/7 crisis care</small></span>
+            <span class="resource-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-wrap footer-inner">
+        <a class="brand footer-brand" href="#home" aria-label="Wellnest home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M20 33s-13-8.2-13-17.1C7 9.7 15.4 7.1 20 14c4.6-6.9 13-4.3 13 1.9C33 24.8 20 33 20 33Z" />
+              <path d="M13 21h5l2.2-4.5L23 25l2-4h3" />
+            </svg>
+          </span>
+          <span>wellnest<span class="brand-period">.</span></span>
+        </a>
+        <p>Made with care for healthier, happier neighborhoods.</p>
+        <span class="footer-note">Take care of you. Take care of each other.</span>
+      </div>
+    </footer>
+  </body>
+</html>
